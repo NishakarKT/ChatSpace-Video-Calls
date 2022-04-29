@@ -1,0 +1,85 @@
+.callDrawer {
+  height: 100vh;
+  width: 250px;
+  background-color: lightcyan;
+  overflow: hidden;
+}
+
+.callDrawer__head {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  background-color: teal;
+}
+
+.callDrawer .MuiSvgIcon-root {
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 3px;
+  transition: all 0.5s;
+}
+
+.callDrawer__head > .MuiSvgIcon-root:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.callDrawer__head > p {
+  font-weight: 600;
+}
+
+.callDrawer > .MuiAccordion-root {
+  color: teal;
+  background-color: lightcyan;
+  transition: all 0.5s;
+}
+
+.callDrawer > .MuiAccordion-root > .MuiAccordionSummary-root {
+  font-weight: 600;
+}
+
+.callDrawer > .MuiAccordion-root:hover {
+  filter: brightness(90%);
+}
+
+.callDrawer > .MuiAvatar-root {
+  margin: 20px auto;
+  height: 180px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.callDrawer > .MuiAvatar-root:hover {
+  filter: brightness(90%);
+}
+
+.callDrawer .MuiButton-root {
+  text-transform: none;
+  font-weight: 700;
+  color: white;
+  background-color: teal;
+  transition: all 0.5s;
+}
+
+.callDrawer .MuiButton-root:hover {
+  background-color: teal;
+  filter: brightness(90%);
+}
+
+.callDrawer__copyId,
+.callDrawer__call {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.callDrawer__accSummary {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}

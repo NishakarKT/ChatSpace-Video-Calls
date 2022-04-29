@@ -1,0 +1,75 @@
+.signup {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.signup::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url("https://images.unsplash.com/photo-1532635241-17e820acc59f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60")
+    no-repeat center center / cover;
+  opacity: 0.1;
+}
+
+.signup__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup__box > .MuiTextField-root {
+  margin-bottom: 10px;
+}
+
+.signup__box .MuiButton-root {
+  text-transform: none;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.signup__box > .MuiButton-root:hover {
+  filter: brightness(90%);
+}
+
+.signup__signupBtn {
+  width: 75% !important;
+  background-color: lightcoral !important;
+  margin-top: 5px !important;
+}
+
+.signup__googleBtn {
+  background-color: lightskyblue !important;
+  margin-top: 5px !important;
+}
+
+.signup__loginBtn {
+  background-color: lightgreen !important;
+  margin-top: 5px !important;
+}
+
+.signup__googleBtn img {
+  margin-right: 5px;
+}
+
+.signup__back {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: teal;
+  font-size: 35px !important;
+  padding: 2px;
+  transition: all 0.5s !important;
+}
+
+.signup__back:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

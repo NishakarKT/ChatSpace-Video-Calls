@@ -1,0 +1,71 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: teal;
+  opacity: 0.75;
+  padding: 5px 10px;
+}
+
+.navBar__title {
+  display: flex;
+  align-items: center;
+}
+
+.navBar__title > p {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  margin-left: 10px;
+}
+
+.navBar__title .MuiSvgIcon-root {
+  color: white;
+  height: 40px;
+  width: 40px;
+}
+
+.navBar .MuiAvatar-root {
+  border: 2px solid white !important;
+}
+
+.navBar .MuiIconButton-root {
+  padding: 3px;
+}
+
+.navBar__menuItem {
+  color: teal !important;
+  font-size: 15px;
+  font-weight: 600;
+  width: 150px;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navBar__menuItem:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 350px) {
+  .navBar__title > p {
+    font-size: 25px;
+  }
+
+  .navBar__title .MuiSvgIcon-root {
+    height: 30px;
+    width: 30px;
+  }
+
+  .navBar .MuiAvatar-root {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width: 210px) {
+  .navBar__title > p {
+    display: none;
+  }
+}

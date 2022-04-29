@@ -1,0 +1,61 @@
+.userDrawer {
+  height: 100vh;
+  width: 250px;
+  background-color: lightcyan;
+  overflow: hidden;
+}
+
+.userDrawer__head {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  background-color: teal;
+}
+
+.userDrawer__head > .MuiSvgIcon-root {
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 3px;
+  transition: all 0.5s;
+}
+
+.userDrawer__head > .MuiSvgIcon-root:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.userDrawer__head > p {
+  font-weight: 600;
+}
+
+.userDrawer > .MuiAccordion-root {
+  color: teal;
+  background-color: lightcyan;
+  transition: all 0.5s;
+}
+
+.userDrawer > .MuiAccordion-root > .MuiAccordionSummary-root {
+  font-weight: 600;
+}
+
+.userDrawer > .MuiAccordion-root .MuiAccordionDetails-root {
+  font-size: 12px;
+}
+
+.userDrawer > .MuiAccordion-root:hover {
+  filter: brightness(90%);
+}
+
+.userDrawer > .MuiAvatar-root {
+  margin: 20px auto;
+  height: 150px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.userDrawer > .MuiAvatar-root:hover {
+  filter: brightness(90%);
+}
